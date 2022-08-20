@@ -12,7 +12,8 @@
     align-items: center;
     padding: 15px;
     margin: 0;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 50%)
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+    pointer-events: initial;
 }
 
 .line-1,
