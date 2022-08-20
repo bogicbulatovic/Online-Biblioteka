@@ -15,6 +15,22 @@ btnsArray.forEach((btnEl) => {
         btnEl.classList.remove("active_button");
       }
     });
+
+    const clickedButtonId = clickedBtn.id;
+    const matchingParagraph = document.querySelector(
+      `[data-ownerId="${clickedButtonId}"]`
+    );
+
+    const tabContentCollection = document.querySelectorAll(".tabContent");
+    const tabContentArray = Array.from(tabContentCollection);
+
+    tabContentArray.forEach((tabContentEl) => {
+      if (tabContentEl.dataset.ownerid !== clickedButtonId) {
+        tabContentEl.classList.add("hidden");
+      } else {
+        matchingParagraph.classList.remove("hidden");
+      }
+    });
   };
 
   btnEl.addEventListener("click", handleClick);
