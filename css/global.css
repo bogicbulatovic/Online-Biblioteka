@@ -22,3 +22,7 @@ main {
 #sidebar_and_header_container>* {
     pointer-events: initial;
 }
+
+button {
+    user-select: none;
+}
