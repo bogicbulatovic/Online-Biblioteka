@@ -27,6 +27,7 @@ body button {
     border: 3px;
     border-radius: 3%;
     color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%)
 }
 
 #table-container {
