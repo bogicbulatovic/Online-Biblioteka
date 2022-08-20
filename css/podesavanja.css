@@ -24,3 +24,13 @@
 .hidden {
     display: none;
 }
+
+#paragraphs p {
+    max-width: 500px;
+}
+
+#paragraphs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
