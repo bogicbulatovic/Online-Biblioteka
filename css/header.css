@@ -1,0 +1,46 @@
+header {
+    background-color: #363bc2;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#open_book {
+    height: 40px;
+    fill: white;
+}
+
+#header_naslov_container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#header_naslov_text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+#header_actions_container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#header_actions_container svg {
+    height: 30px;
+    fill: white;
+}
+
+#header_actions_container img {
+    height: 30px;
+    border-radius: 50%;
+}
