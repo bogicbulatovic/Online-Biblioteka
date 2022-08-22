@@ -30,11 +30,6 @@ td {
     box-shadow: 0 2px 4px rgb(0 0 0 / 50%)
 }
 
-#table-container {
-    overflow-x: auto;
-    overflow-y: auto;
-}
-
 .table_menu_btn {
     background-color: transparent;
     border: none;
