@@ -32,31 +32,290 @@
             <button id="Format">Format</button>
             <button id="Pismo">Pismo</button>
         </div>
-        <div id="paragraphs">
-            <p data-ownerId="Polisa" class="tabContent"> <strong>Polisa</strong> Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Officiis, magnam accusantium? Veniam aliquam, tempore est, sequi saepe eius, qui
-                quaerat delectus repellendus deserunt dolore repellat nobis optio alias? Blanditiis, laboriosam?</p>
-            <p data-ownerId="Kategorije" class="hidden tabContent"><strong>Kategorije</strong> Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Ratione libero vero explicabo, voluptates blanditiis omnis optio
-                cupiditate facere sequi saepe officiis velit error unde sit quam iusto dolor provident voluptatum! </p>
-            <p data-ownerId="Zanrovi" class="hidden tabContent"> <strong>Zanrovi</strong> Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Molestiae beatae nam non odit vero autem repellendus? Placeat voluptates,
-                ad perferendis eveniet ex vero animi est aliquid necessitatibus suscipit? Consequuntur, repudiandae?
-            </p>
-            <p data-ownerId="Izdavac" class="hidden tabContent"> <strong>Izdavac</strong> Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Ullam minima blanditiis impedit harum sapiente assumenda. Autem harum
-                omnis sed sit. Ut adipisci nihil ipsam nobis consequuntur totam modi quas beatae? </p>
-            <p data-ownerId="Povez" class="hidden tabContent"> <strong>Povez</strong> Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quos, doloribus! Vero molestias voluptates suscipit officia nesciunt
-                commodi optio est quas minima praesentium! Maxime eaque reiciendis velit nemo, aliquid voluptates.
-                Tempore. </p>
-            <p data-ownerId="Format" class="hidden tabContent"> <strong>Format</strong> Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Officiis corrupti modi excepturi eaque natus, iure ex officia cumque
-                voluptatem, consectetur cupiditate optio nesciunt. Error nostrum, eius nisi sapiente iste non. </p>
-            <p data-ownerId="Pismo" class="hidden tabContent"> <strong>Pismo</strong> Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Id, laborum voluptas. Ea veritatis sequi quaerat consectetur praesentium
-                vero possimus? Quaerat quo debitis reprehenderit voluptatum totam dolore quae, praesentium at dolorem!
-            </p>
+        <div id="content_container">
+            <div data-ownerId="Polisa" class="tabContent">
+                <dl id="polisa_data_list">
+                    <div>
+                        <div>
+                            <dt>
+                                <h1>Rok za rezervaciju</h1>
+                            </dt>
+                            <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut quos minus excepturi, sunt
+                                tempora non explicabo laborum.</dd>
+                            <dt>
+                        </div>
+                        <div>
+                            <input id="rok_rezervacije" type="number"> <label for="rok_rezervacije">dana</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1>Rok vracanja</h1>
+                            </dt>
+                            <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero accusamus expedita ea
+                                ullam officiis sed obcaecati blanditiis ex sit a.</dd>
+                            <dt>
+                        </div>
+                        <div>
+                            <input id="rok_vracanja" type="number"> <label for="rok_vracanja">dana</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1>Rok konflikta</h1>
+                            </dt>
+                            <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero accusamus expedita ea
+                                ullam officiis sed obcaecati blanditiis ex sit a.</dd>
+                        </div>
+                        <div>
+                            <input id="rok_konflikta" type="number"> <label for="rok_konflikta">dana</label>
+                        </div>
+                    </div>
+                </dl>
+            </div>
+            <div data-ownerId="Kategorije" class="hidden tabContent kategorije_table">
+                <button class="tabs_btn">+ Nova kategorija</button>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Naziv kategorije</td>
+                        <th>Opis </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /></td>
+                        <td>Hrana i pice</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Djecije knjige</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Istorija</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Skolske knjige</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Nauka, priroda i matematika</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Razno</td>
+                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
+                        </td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <div data-ownerId="Zanrovi" class="hidden tabContent">
+                <button class="tabs_btn">+ Novi zanr</button>
+                <table>
+                    <tr>
+                        <td class="checkbox_table_cell"></td>
+                        <th>Naziv zanra</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox_table_cell"><input type="checkbox" /></td>
+                        <td>Poezija</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox_table_cell"><input type="checkbox" /></td>
+                        <td>Strucna literatura</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox_table_cell"><input type="checkbox" /></td>
+                        <td>Poezija</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox_table_cell"><input type="checkbox" /></td>
+                        <td>Strucna literatura</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="checkbox_table_cell"><input type="checkbox" /></td>
+                        <td>Poezija</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <div data-ownerId="Izdavac" class="hidden tabContent">
+                <button class="tabs_btn">+ Novi izdavac</button>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Naziv izdavaca</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Izdavac 1</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Izdavac 2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Izdavac 3</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Izdavac 4</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Izdavac 5</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <div data-ownerId="Povez" class="hidden tabContent">
+                <button class="tabs_btn">+ Novi povez</button>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Naziv poveza</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Tvrdi povez</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Meki povez</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Koricenje spiralom</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Klamovanje</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Kozni povez</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Umjetnicki povez</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <div data-ownerId="Format" class="hidden tabContent">
+                <button class="tabs_btn">+ Novi format</button>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Naziv formata</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>A1</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>A2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>A3</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>A4</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>A5</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>A6</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <div data-ownerId="Pismo" class="hidden tabContent">
+                <button class="tabs_btn">+ Novo pismo</button>
+                <table>
+                    <tr>
+                        <td></td>
+                        <th>Naziv pisma</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Cirilica</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Latinica</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Cirilica</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Latinica</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Cirilica</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Latinica</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </main>
 </body>
