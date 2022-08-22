@@ -33,6 +33,11 @@ td {
 .table_menu_btn {
     background-color: transparent;
     border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
 }
 
 .table_menu_btn svg {
