@@ -1,0 +1,12 @@
+.menu_trigger_wrap {
+    position: relative;
+}
+
+.menu_root {
+    position: absolute;
+    height: 550px;
+    width: 80px;
+    background-color: red;
+    top: 100%;
+    right: 20%;
+}
