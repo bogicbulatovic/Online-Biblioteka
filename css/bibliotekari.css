@@ -18,7 +18,7 @@ td {
     text-align: center;
 }
 
-body button {
+#add_user_btn {
     margin: 15px;
     text-align: center;
     font-size: 25px;
@@ -33,4 +33,13 @@ body button {
 #table-container {
     overflow-x: auto;
     overflow-y: auto;
+}
+
+.table_menu_btn {
+    background-color: transparent;
+    border: none;
+}
+
+.table_menu_btn svg {
+    height: 20px;
 }
