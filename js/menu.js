@@ -1,38 +1,42 @@
-let isMenuOpen = false;
+const menuWraps = document.querySelectorAll(".menu_trigger_wrap");
 
-const menuRoot = document.querySelector(".menu_root");
-const menuBtn = document.querySelector(".table_menu_btn");
+menuWraps.forEach((menuWrap) => {
+  const menuRoot = menuWrap.querySelector(".menu_root");
+  const menuBtn = menuWrap.querySelector(".table_menu_btn");
 
-const openMenuclass = "menuOpen";
+  let isMenuOpen = false;
 
-const closeMenu = () => {
-  menuRoot.classList.remove(openMenuclass);
-  isMenuOpen = false;
-};
+  const openMenuclass = "menuOpen";
 
-let timerId;
+  const closeMenu = () => {
+    menuRoot.classList.remove(openMenuclass);
+    isMenuOpen = false;
+  };
 
-const handleMenuBtnClick = () => {
-  if (!isMenuOpen) {
-    menuRoot.classList.add(openMenuclass);
-    isMenuOpen = true;
-    menuRoot.focus();
-    window.clearTimeout(timerId);
-  } else {
-    closeMenu();
-  }
-};
+  let timerId;
 
-const handleMenuRootBlur = (e) => {
-  if (e.relatedTarget === menuBtn) {
-    // close menu after click event to prevent reopening
-    timerId = window.setTimeout(() => {
+  const handleMenuBtnClick = () => {
+    if (!isMenuOpen) {
+      menuRoot.classList.add(openMenuclass);
+      isMenuOpen = true;
+      menuRoot.focus();
+      window.clearTimeout(timerId);
+    } else {
       closeMenu();
-    }, 500);
-  } else {
-    closeMenu();
-  }
-};
+    }
+  };
 
-menuBtn.addEventListener("click", handleMenuBtnClick);
-menuRoot.addEventListener("blur", handleMenuRootBlur);
+  const handleMenuRootBlur = (e) => {
+    if (e.relatedTarget === menuBtn) {
+      // close menu after click event to prevent reopening
+      timerId = window.setTimeout(() => {
+        closeMenu();
+      }, 500);
+    } else {
+      closeMenu();
+    }
+  };
+
+  menuBtn.addEventListener("click", handleMenuBtnClick);
+  menuRoot.addEventListener("blur", handleMenuRootBlur);
+});
