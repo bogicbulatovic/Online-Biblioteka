@@ -4,9 +4,24 @@
 
 .menu_root {
     position: absolute;
-    height: 550px;
-    width: 80px;
-    background-color: red;
+    background-color: white;
     top: 100%;
     right: 20%;
+    border-radius: 5px;
+    padding: 30px 15px;
+    display: grid;
+    gap: 10px;
+    justify-content: start;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+    display: none;
+}
+
+.menu_root a {
+    padding: 5px;
+    white-space: nowrap;
+    color: black;
+}
+
+.menuOpen {
+    display: initial;
 }
