@@ -1,29 +1,20 @@
-let isOpen = false
+let isOpen = false;
 
 const handleBtnClick = () => {
+  const navbar = document.querySelector(".navbar");
 
+  const openClass = "navbar-open";
 
-    const navbar = document.querySelector(".navbar");
+  if (isMenuOpen) {
+    navbar.classList.remove(openClass);
 
-    const openClass = "navbar-open"
+    isMenuOpen = false;
+  } else {
+    navbar.classList.add(openClass);
+    isMenuOpen = true;
+  }
+};
 
-    if (isOpen) {
+const button = document.querySelector(".nav-toggle-button");
 
-        navbar.classList.remove(openClass);
-
-        isOpen = false;
-    } else {
-
-        navbar.classList.add(openClass)
-        isOpen = true
-    }
-
-
-}
-
-
-const button = document.querySelector(".nav-toggle-button")
-
-button.addEventListener("click", handleBtnClick)
-
-
+button.addEventListener("click", handleBtnClick);
