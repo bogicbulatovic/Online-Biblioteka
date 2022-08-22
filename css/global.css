@@ -27,3 +27,7 @@ button {
     user-select: none;
     cursor: pointer;
 }
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
