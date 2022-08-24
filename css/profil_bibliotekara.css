@@ -16,7 +16,7 @@ header {
 
 #profil_image_container img {
   height: 300px;
-  width: fit-content;
+  width: auto;
   border: 3px solid lightgray;
 }
 
