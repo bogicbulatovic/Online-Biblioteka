@@ -33,7 +33,9 @@ menuWraps.forEach((menuWrap) => {
         closeMenu();
       }, 500);
     } else {
-      closeMenu();
+      if (!menuRoot.contains(e.relatedTarget)) {
+        closeMenu();
+      }
     }
   };
 
