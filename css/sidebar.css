@@ -6,39 +6,38 @@
 #sidebar {
   height: 100%;
   width: max-content;
-  pointer-events: none !important;
 }
 
 .container {
+  background-color: #262626;
+  display: grid;
+  gap: 50px;
+  align-content: flex-start;
   font-family: "Dosis", sans-serif;
   height: 100%;
-  pointer-events: none;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+  width: 193px;
+  transition: width 300ms ease;
+  justify-content: start;
+  justify-items: start;
+  overflow-x: hidden;
 }
 
 .navbar {
-  height: 100%;
-  background-color: #262626;
   display: grid;
   justify-content: start;
   align-content: start;
   gap: 50px;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 100px;
-  padding-bottom: 30px;
   position: relative;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
-  overflow-x: hidden;
-  transition: width 300ms ease;
 }
 
-:not(.navbar-open).navbar {
+:not(.sidebar-open).container {
   width: 19px;
-}
-
-.navbar-open {
-  transform: translateX(0%);
 }
 
 .nav-link {
@@ -61,8 +60,8 @@
   align-items: center;
   gap: 15px;
   justify-content: start;
+  white-space: nowrap;
 }
-
 .nav-item svg {
   height: auto;
   width: 20px;

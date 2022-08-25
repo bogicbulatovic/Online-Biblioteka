@@ -1,15 +1,11 @@
 .nav-toggle-button {
   border: none;
-  background-color: #262626;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
   margin: 0;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
   pointer-events: initial;
+  background-color: transparent;
 }
 
 .line-1,
@@ -21,20 +17,20 @@
   transition: opacity 300ms ease;
 }
 
-.navbar-open .line-1 {
-  transform: rotate(45deg) translate(20%, 200%);
+.sidebar-open .line-1 {
+  transform: rotate(45deg) translate(39%, 332%);
 }
 
-.navbar-open .line-2 {
+.sidebar-open .line-2 {
   opacity: 0;
 }
 
-.navbar-open .line-3 {
-  transform: rotate(-45deg) translate(20%, -200%);
+.sidebar-open .line-3 {
+  transform: rotate(-45deg) translate(23%, -200%);
 }
 
 .hamburger-menu-icon {
-  width: 35px;
+  width: 20px;
   height: 30px;
   cursor: pointer;
   display: flex;
