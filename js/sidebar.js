@@ -1,9 +1,9 @@
 let isSidebarOpen = false;
 
 const handleBtnClick = () => {
-  const navbar = document.querySelector(".navbar");
+  const navbar = document.querySelector(".container");
 
-  const openClass = "navbar-open";
+  const openClass = "sidebar-open";
 
   if (isSidebarOpen) {
     navbar.classList.remove(openClass);

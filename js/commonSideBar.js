@@ -3,14 +3,14 @@ let divSidebarElement = document.querySelector("#sidebar");
 divSidebarElement.innerHTML = `
                 <div class="container">
     
+                <button class="nav-toggle-button">
+                    <div class="hamburger-menu-icon">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                </button>
                 <nav class="navbar">
-                    <button class="nav-toggle-button">
-                        <div class="hamburger-menu-icon">
-                            <div class="line line-1"></div>
-                            <div class="line line-2"></div>
-                            <div class="line line-3"></div>
-                        </div>
-                    </button>
                     <ul class="nav-list">
                         <li class="nav-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
