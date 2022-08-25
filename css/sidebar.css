@@ -37,7 +37,7 @@
 }
 
 :not(.sidebar-open).container {
-  width: 19px;
+  width: 49px;
 }
 
 .nav-link {

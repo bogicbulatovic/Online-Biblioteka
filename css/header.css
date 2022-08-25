@@ -1,47 +1,52 @@
+body {
+  /* prevent header covering main content */
+  padding-top: 200px;
+}
+
 header {
-    background-color: #363bc2;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 50%)
+  background-color: #363bc2;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 }
 
 #open_book {
-    height: 40px;
-    fill: white;
+  height: 40px;
+  fill: white;
 }
 
 #header_naslov_container {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 15px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 15px;
 }
 
 #header_naslov_text {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: 700;
-    font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 #header_actions_container {
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 15px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 15px;
 }
 
 #header_actions_container svg {
-    height: 30px;
-    fill: white;
+  height: 30px;
+  fill: white;
 }
 
 #header_actions_container img {
-    height: 30px;
-    border-radius: 50%;
+  height: 30px;
+  border-radius: 50%;
 }
