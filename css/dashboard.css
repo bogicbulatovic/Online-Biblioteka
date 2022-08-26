@@ -50,3 +50,7 @@ hr {
   display: grid;
   gap: 15px;
 }
+
+.transakcija_item_text_section a {
+  text-decoration: none;
+}
