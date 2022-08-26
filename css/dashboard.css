@@ -1,0 +1,52 @@
+main {
+  padding-left: 20px;
+}
+
+body {
+  padding-top: 100px;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+#aktivnosti_i_rezervacije_container {
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 30px;
+}
+
+.transakcija_item {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 15px;
+  align-items: center;
+}
+
+.transakcija_item_text_section {
+  display: grid;
+  gap: 5px;
+}
+
+.transakcija_item_text_section > :first-child {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 20px;
+}
+
+#aktivnosti_container > :first-child {
+  margin-bottom: 15px;
+}
+
+.transakcija_item img {
+  height: auto;
+  width: 50px;
+  border-radius: 50%;
+}
+
+#transakcija_item_container {
+  display: grid;
+  gap: 15px;
+}

@@ -9,6 +9,7 @@ body {
 
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
 
   /* prevent sidebar covering content*/
   padding-left: 49px;

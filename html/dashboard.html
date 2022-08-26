@@ -8,11 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/global.css" />
   <link rel="stylesheet" href="../css/header.css" />
   <link rel="stylesheet" href="../css/sidebar.css" />
   <link rel="stylesheet" href="../css/hambtn.css" />
+  <link rel="stylesheet" href="../css/dashboard.css">
   <script src="../js/header.js" defer></script>
   <script src="../js/commonSideBar.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
@@ -26,6 +27,37 @@
       <div id="sidebar"></div>
     </div>
     <main>
+      <h1>Dashboard</h1>
+      <hr>
+      <div id="aktivnosti_i_rezervacije_container">
+        <div id="aktivnosti_container">
+          <h2>Aktivnosti</h2>
+          <div id="transakcija_item_container">
+            <div class="transakcija_item">
+              <img src="../images/julian_profil_picture.jpg" alt="transkacija profil picture">
+              <div class="transakcija_item_text_section">
+                <div>
+                  <p>Izdavanje knjige</p>
+                  <span>3 days ago</span>
+                </div>
+                <p> Valentina K je izadala knjigu Tom Sojer korisniku NN </p>
+              </div>
+            </div>
+            <!--  -->
+            <div class="transakcija_item">
+              <img src="../images/julian_profil_picture.jpg" alt="transkacija profil picture">
+              <div class="transakcija_item_text_section">
+                <div>
+                  <p>Izdavanje knjige</p>
+                  <span>3 days ago</span>
+                </div>
+                <p> Valentina K je izadala knjigu Tom Sojer korisniku NN </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rezervacije_container"></div>
+      </div>
     </main>
   </div>
 </body>
