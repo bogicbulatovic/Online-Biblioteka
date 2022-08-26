@@ -19,7 +19,7 @@ header {
   font-size: 18px;
 }
 
-#podaci_novog_bibliotekara > div > :first-child {
+.podaci_novog_bibliotekara_field > :first-child {
   color: grey;
 }
 
@@ -37,7 +37,7 @@ header {
   gap: 20px;
 }
 
-#podaci_novog_bibliotekara > div {
+.podaci_novog_bibliotekara_field {
   display: grid;
   gap: 3px;
   align-content: flex-start;
@@ -72,4 +72,28 @@ input::-webkit-inner-spin-button {
 /*for firefox*/
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+#action_buttons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+}
+
+#otkazi_button {
+  background-color: #c90303;
+  color: white;
+}
+
+#sacuvaj_button {
+  background-color: #017316;
+  color: white;
+}
+
+#otkazi_button,
+#sacuvaj_button {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: 2px solid lightgray;
 }
