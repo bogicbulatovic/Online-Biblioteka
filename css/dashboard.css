@@ -34,6 +34,8 @@ hr {
   grid-auto-flow: column;
   justify-content: start;
   gap: 20px;
+  color: grey;
+  font-weight: 700;
 }
 
 #aktivnosti_container > :first-child {
