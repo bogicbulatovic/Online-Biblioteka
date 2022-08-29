@@ -3,7 +3,7 @@ main {
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 35px;
 }
 
 hr {
@@ -55,4 +55,88 @@ hr {
 
 .transakcija_item_text_section a {
   text-decoration: none;
+}
+
+#table_and_link_container {
+  display: grid;
+  gap: 10px;
+}
+
+.table_row {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  font-weight: 500;
+  color: rgb(105 104 104);
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 10px;
+  gap: 15px;
+  align-items: center;
+}
+
+.table_row > :first-child svg {
+  width: 50px;
+  height: auto;
+  fill: lightgray;
+}
+
+.table_row > :first-child {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+}
+
+#rezervacije_container > :first-child {
+  margin-bottom: 15px;
+}
+
+.check_xmark_container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.check_xmark_container button {
+  border: none;
+  background-color: transparent;
+}
+
+.check_button,
+.x_button {
+  width: 15px;
+  height: auto;
+  fill: rgb(73, 73, 73);
+}
+
+.check_button {
+  width: 20px;
+}
+
+.datum_rezervacije {
+  text-align: center;
+  color: rgb(67, 67, 67);
+  padding: 5px;
+  background-color: lightgray;
+}
+
+#table_link {
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: end;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+#table_link svg {
+  width: 30px;
+  height: auto;
+  fill: blue;
+}
+
+#statistika_container {
+  margin-top: 50px;
 }

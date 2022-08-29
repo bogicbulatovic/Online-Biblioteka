@@ -1,0 +1,185 @@
+/* FIGURE */
+figure {
+  min-width: 200px;
+  max-width: 780px;
+  /*      max-width: 600px;                     /**/
+  margin: 2rem;
+  padding: 1.5rem 2rem 2rem;
+}
+
+/* TABLE */
+.barChart_h {
+  display: block;
+  height: auto; /* Do I need this? */
+  width: 100%;
+  overflow-wrap: break-word;
+  border-spacing: 0;
+}
+
+/* CAPTION */
+.barChart_h caption {
+  display: block;
+  padding: 0 0 1rem 0;
+  line-height: 1.1;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* TBODY */
+.barChart_h tbody {
+  display: block; /* All HTML elements have a "display" value assigned by the User-Agent (UA).
+                                               Default-values assigned:
+                                                  tbody ==> (display: table-row-group)
+                                                  tr    ==> (display: table-row)
+                                                  td    ==> (display: table-cell)
+                                               Assigning (display: block) allows us to turn a table into a horizontal display. */
+}
+
+.barChart_h tbody:after {
+  /* For IE9 and under, need to enclose floats... */
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+/* TH+TD */
+.barChart_h tbody tr.firstRow th,
+.barChart_h tbody tr.firstRow td {
+  padding: 1rem 0 0.5rem 0; /* Add extra vertical padding. */
+}
+
+.barChart_h tbody th,
+.barChart_h tbody td {
+  padding: 0.5rem 0 0.4rem 0; /* Space around Bars. */
+}
+
+.barChart_h tbody tr.lastRow th,
+.barChart_h tbody tr.lastRow td {
+  padding: 0.5rem 0 1rem 0; /* Add extra vertical padding. */
+}
+
+/* TH */
+.barChart_h tbody th {
+  /*      width: 25%;     /**/
+  font-weight: normal;
+  text-align: right;
+}
+
+/* TD */
+.barChart_h tbody td {
+  border-left: 2px solid black; /* X-AXIS. (vertical) */
+
+  border-right: 1px solid #ddd; /* Finish out repeating vertical-gridlines. */
+
+  background-image: linear-gradient(to right, #ddd 1px, transparent 1px);
+  /* Create grey-transparent gradient for 1px, then remainder of gradient is transparent.
+                                               This creates the illusion of a 1px vertical-line. */
+  background-size: 10% 100%; /* Go right in 10% increments. */
+}
+
+/* BARS */
+.barChart_h tbody td span {
+  position: relative; /* Needed for absolute-positioning of Bar-value. */
+  display: block; /* Expands <span> to fill <td> */
+  height: 20px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* BAR-VALUES */
+.barChart_h tbody td span b {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  display: block;
+  padding: 0 0 0 0.5rem;
+  font-weight: normal;
+}
+
+/* Y-AXIS */
+.barChart_h tbody th.blankCell {
+  width: 25%;
+}
+
+.barChart_h tbody th.y-axis {
+  position: relative; /* New */
+  padding-bottom: 1.4rem;
+  border-bottom: 2px solid black; /* Y-AXIS. (horizontal) */
+  background-color: #fff;
+}
+
+/* Y-AXIS TITLE */
+.barChart_h tbody div.y-axis-title {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Y-AXIS LABELS */
+.barChart_h tbody ol.y-axis-labels {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex; /* Create Flexbox (Flex-Container). */
+  flex-direction: row;
+  margin: 0; /* New */
+  padding: 0; /* New */
+  list-style: none; /* New */
+  font-size: 0.9rem;
+}
+
+.barChart_h tbody ol.y-axis-labels li.zero {
+  position: absolute; /* Remove 0 from Flexbox flow. */ /* New */
+  left: 0;
+  right: auto;
+  bottom: auto;
+  top: 0;
+}
+
+.barChart_h tbody ol.y-axis-labels li.zero b {
+  transform: translate(-50%, 0%);
+}
+
+.barChart_h tbody ol.y-axis-labels li {
+  flex: 1 0 0;
+  text-align: right;
+}
+
+.barChart_h tbody ol.y-axis-labels li b {
+  display: inline-flex;
+  transform: translate(50%, 0%);
+  font-weight: normal;
+}
+
+#first_bar {
+  background-color: green;
+}
+
+#second_bar {
+  background-color: orange;
+}
+
+#third_bar {
+  background-color: red;
+}
+
+.label {
+  white-space: nowrap;
+  padding-right: 10px !important;
+}
+
+.bar {
+  color: blue;
+}
+
+.label a {
+  text-decoration: none;
+}
