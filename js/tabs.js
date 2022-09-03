@@ -1,6 +1,4 @@
-const btnsContainer = document.getElementById("tab_buttons_container");
-
-const tabButtons = btnsContainer.querySelectorAll("button");
+const tabButtons = document.querySelectorAll(".tab_button");
 
 tabButtons.forEach((btnEl) => {
   const handleClick = (e) => {
@@ -19,7 +17,7 @@ tabButtons.forEach((btnEl) => {
       `[data-ownerId="${clickedButtonId}"]`
     );
 
-    const tabContentCollection = document.querySelectorAll(".tabContent");
+    const tabContentCollection = document.querySelectorAll(".tab_content");
     const tabContentArray = Array.from(tabContentCollection);
 
     tabContentArray.forEach((tabContentEl) => {

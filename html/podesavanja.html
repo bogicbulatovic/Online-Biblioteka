@@ -16,7 +16,7 @@
     <script src="../js/header.js" defer></script>
     <script src="../js/commonSideBar.js" defer></script>
     <script src="../js/sidebar.js" defer></script>
-    <script src="../js/podesavanja.js" defer></script>
+    <script src="../js/tabs.js" defer></script>
     <script src="../js/menu.js" defer></script>
     <title>Podesavanja</title>
 </head>
@@ -28,16 +28,16 @@
     </div>
     <main>
         <div id="tab_buttons_container">
-            <button id="Polisa" class="active_button">Polisa</button>
-            <button id="Kategorije">Kategorije</button>
-            <button id="Zanrovi">Zanrovi</button>
-            <button id="Izdavac">Izdavac</button>
-            <button id="Povez">Povez</button>
-            <button id="Format">Format</button>
-            <button id="Pismo">Pismo</button>
+            <button id="Polisa" class="active_button tab_button">Polisa</button>
+            <button id="Kategorije" class="tab_button">Kategorije</button>
+            <button id="Zanrovi" class="tab_button">Zanrovi</button>
+            <button id="Izdavac" class="tab_button">Izdavac</button>
+            <button id="Povez" class="tab_button">Povez</button>
+            <button id="Format" class="tab_button">Format</button>
+            <button id="Pismo" class="tab_button">Pismo</button>
         </div>
         <div id="content_container">
-            <div data-ownerId="Polisa" class="tabContent">
+            <div data-ownerId="Polisa" class="tab_content">
                 <dl id="polisa_data_list">
                     <div>
                         <div>
@@ -77,7 +77,7 @@
                     </div>
                 </dl>
             </div>
-            <div data-ownerId="Kategorije" class="hidden tabContent kategorije_table">
+            <div data-ownerId="Kategorije" class="hidden tab_content kategorije_table">
                 <button class="tabs_btn">+ Nova kategorija</button>
                 <table>
                     <tr>
@@ -202,7 +202,7 @@
                     </tr>
                 </table>
             </div>
-            <div data-ownerId="Zanrovi" class="hidden tabContent">
+            <div data-ownerId="Zanrovi" class="hidden tab_content">
                 <button class="tabs_btn">+ Novi zanr</button>
                 <table>
                     <tr>
@@ -297,7 +297,7 @@
                     </tr>
                 </table>
             </div>
-            <div data-ownerId="Izdavac" class="hidden tabContent">
+            <div data-ownerId="Izdavac" class="hidden tab_content">
                 <button class="tabs_btn">+ Novi izdavac</button>
                 <table>
                     <tr>
@@ -392,7 +392,7 @@
                     </tr>
                 </table>
             </div>
-            <div data-ownerId="Povez" class="hidden tabContent">
+            <div data-ownerId="Povez" class="hidden tab_content">
                 <button class="tabs_btn">+ Novi povez</button>
                 <table>
                     <tr>
@@ -504,7 +504,7 @@
                     </tr>
                 </table>
             </div>
-            <div data-ownerId="Format" class="hidden tabContent">
+            <div data-ownerId="Format" class="hidden tab_content">
                 <button class="tabs_btn">+ Novi format</button>
                 <table>
                     <tr>
@@ -616,7 +616,7 @@
                     </tr>
                 </table>
             </div>
-            <div data-ownerId="Pismo" class="hidden tabContent">
+            <div data-ownerId="Pismo" class="hidden tab_content">
                 <button class="tabs_btn">+ Novo pismo</button>
                 <table>
                     <tr>

@@ -1,98 +1,98 @@
 #tab_buttons_container {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    padding-right: 2px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding-right: 2px;
 }
 
 #tab_buttons_container button {
-    border: none;
-    background-color: white;
-    font-size: 25px;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  border: none;
+  background-color: white;
+  font-size: 25px;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #tab_buttons_container .active_button {
-    background-color: #7d83f5;
-    border-bottom: 4px solid blue;
+  background-color: #7d83f5;
+  border-bottom: 4px solid blue;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #content_container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
-.tabContent {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.tab_content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table {
-    width: 100%;
-    box-shadow: 5px 5px 5px #abaff7;
-    min-width: 70%;
+  width: 100%;
+  box-shadow: 5px 5px 5px #abaff7;
+  min-width: 70%;
 }
 
 table,
 th,
 td {
-    border: 1px solid white;
-    border-collapse: collapse;
+  border: 1px solid white;
+  border-collapse: collapse;
 }
 
 th,
 td {
-    background-color: #999ef7;
-    border-color: #abaff7;
-    padding: 15px;
-    text-align: center;
+  background-color: #999ef7;
+  border-color: #abaff7;
+  padding: 15px;
+  text-align: center;
 }
 
 table {
-    overflow-x: auto;
-    overflow-y: auto;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .tabs_btn {
-    margin: 15px;
-    text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    background-color: #262626;
-    border: 3px;
-    border-radius: 3%;
-    color: white;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 50%)
+  margin: 15px;
+  text-align: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  background-color: #262626;
+  border: 3px;
+  border-radius: 3%;
+  color: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 }
 
 .checkbox_table_cell {
-    width: 3px;
+  width: 3px;
 }
 
 #polisa_data_list {
-    max-width: 80%;
+  max-width: 80%;
 }
 
-#polisa_data_list>div {
-    padding: 20px 40px;
-    border-bottom: 2px solid lightgray;
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 15px;
+#polisa_data_list > div {
+  padding: 20px 40px;
+  border-bottom: 2px solid lightgray;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 15px;
 }
 
 #polisa_data_list input {
-    min-height: 30px;
-    border: 3px solid lightgray;
-    margin-right: 10px;
-    padding-left: 10px;
+  min-height: 30px;
+  border: 3px solid lightgray;
+  margin-right: 10px;
+  padding-left: 10px;
 }
