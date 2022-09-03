@@ -1,12 +1,3 @@
-#tab_buttons_container {
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  padding-right: 2px;
-}
-
 #tab_buttons_container button {
   border: none;
   background-color: white;
@@ -23,16 +14,6 @@
 
 .hidden {
   display: none;
-}
-
-#content_container {
-  margin-top: 50px;
-}
-
-.tab_content {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .tabs_btn {
