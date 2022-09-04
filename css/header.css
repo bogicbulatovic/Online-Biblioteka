@@ -90,3 +90,9 @@ header {
   font-size: 20px;
   color: black;
 }
+
+#profile_img_button {
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+}
