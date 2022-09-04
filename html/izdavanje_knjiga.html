@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/hambtn.css" />
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/izdavanje_knjiga.css">
+    <script src="../js/menu.js" defer></script>
     <script src="../js/header.js" defer></script>
     <script src="../js/commonSideBar.js" defer></script>
     <script src="../js/sidebar.js" defer></script>
@@ -24,6 +28,190 @@
         <div id="header"></div>
         <div id="sidebar"></div>
     </div>
+    <h1>Izdavanje knjiga</h1>
+    <hr>
+    <main>
+        <div class="page_nav_links_and_table_container">
+            <div class="page_nav_links_container">
+                <div class="page_nav_link_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" />
+                    </svg>
+                    <span>Izdate knjige</span>
+                </div>
+                <div class="page_nav_link_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                            d="M0 64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM336 448V160H256C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V448C48 456.8 55.16 464 64 464H320C328.8 464 336 456.8 336 448z" />
+                    </svg>
+                    <span>Vracene knjige</span>
+                </div>
+                <div class="page_nav_link_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z" />
+                    </svg>
+                    <span>Knjige u prekoracenju</span>
+                </div>
+                <hr>
+                <div class="page_nav_link_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zM329 305c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L329 305z" />
+                    </svg>
+                    <span>Aktivne rezervacije</span>
+                </div>
+                <div class="page_nav_link_item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M152 64H296V24C296 10.75 306.7 0 320 0C333.3 0 344 10.75 344 24V64H384C419.3 64 448 92.65 448 128V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V128C0 92.65 28.65 64 64 64H104V24C104 10.75 114.7 0 128 0C141.3 0 152 10.75 152 24V64zM48 248H128V192H48V248zM48 296V360H128V296H48zM176 296V360H272V296H176zM320 296V360H400V296H320zM400 192H320V248H400V192zM400 408H320V464H384C392.8 464 400 456.8 400 448V408zM272 408H176V464H272V408zM128 408H48V448C48 456.8 55.16 464 64 464H128V408zM272 192H176V248H272V192z" />
+                    </svg>
+                    <span>Aktivne rezervacije</span>
+                </div>
+            </div>
+            <div id="table-container">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Naziv knjige</th>
+                        <th>Autor</th>
+                        <th>Kategorija</th>
+                        <th>Na raspolaganju</th>
+                        <th>Rezervisano</th>
+                        <th>Izdato</th>
+                        <th>U prekoracenju</th>
+                        <th>Ukupna kolicina</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Geografija Crne Gore</td>
+                        <td>Maksimovic Danka</td>
+                        <td>Udzbenici</td>
+                        <td>6</td>
+                        <td><a href="#">5</a></td>
+                        <td>
+                            <a href="#">5</a>
+                        </td>
+                        <td><a href="#">2</a></td>
+                        <td>11</td>
+                        <th>
+                            <div class="menu_trigger_wrap">
+                                <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 128 512">
+                                        <path
+                                            d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z" />
+                                    </svg> </button>
+                                <div class="menu_root" tabindex="-1">
+                                    <a href="#">Pregledaj detalje</a>
+                                    <a href="#">Izmijeni knjigu</a>
+                                    <a href="#">Izdaj knjigu</a>
+                                    <a href="#">Rezervisi knjigu</a>
+                                    <a href="#">Vrati knjigu</a>
+                                    <a href="#">Otpisi knjigu</a>
+                                    <a href="#">Izbrisi knjigu</a>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Muzicka kultura</td>
+                        <td>Bubalo Zivkovic</td>
+                        <td>Udzbenici</td>
+                        <td>20</td>
+                        <td><a href="#">0</a></td>
+                        <td>
+                            <a href="#">0</a>
+                        </td>
+                        <td><a href="#">0</a></td>
+                        <td>20</td>
+                        <th>
+                            <div class="menu_trigger_wrap">
+                                <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 128 512">
+                                        <path
+                                            d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z" />
+                                    </svg> </button>
+                                <div class="menu_root" tabindex="-1">
+                                    <a href="#">Pregledaj detalje</a>
+                                    <a href="#">Izmijeni knjigu</a>
+                                    <a href="#">Izdaj knjigu</a>
+                                    <a href="#">Rezervisi knjigu</a>
+                                    <a href="#">Vrati knjigu</a>
+                                    <a href="#">Otpisi knjigu</a>
+                                    <a href="#">Izbrisi knjigu</a>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Tom Sojer</td>
+                        <td>Mark Twain</td>
+                        <td>Romani</td>
+                        <td>3</td>
+                        <td><a href="#">2</a></td>
+                        <td>
+                            <a href="#">7</a>
+                        </td>
+                        <td><a href="#">1</a></td>
+                        <td>10</td>
+                        <th>
+                            <div class="menu_trigger_wrap">
+                                <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 128 512">
+                                        <path
+                                            d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z" />
+                                    </svg> </button>
+                                <div class="menu_root" tabindex="-1">
+                                    <a href="#">Pregledaj detalje</a>
+                                    <a href="#">Izmijeni knjigu</a>
+                                    <a href="#">Izdaj knjigu</a>
+                                    <a href="#">Rezervisi knjigu</a>
+                                    <a href="#">Vrati knjigu</a>
+                                    <a href="#">Otpisi knjigu</a>
+                                    <a href="#">Izbrisi knjigu</a>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <td>Robinson Kruso</td>
+                        <td>Daniel Defoe</td>
+                        <td>Romani</td>
+                        <td>0</td>
+                        <td><a href="#">0</a></td>
+                        <td>
+                            <a href="#">10</a>
+                        </td>
+                        <td><a href="#">2</a></td>
+                        <td>10</td>
+                        <th>
+                            <div class="menu_trigger_wrap">
+                                <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 128 512">
+                                        <path
+                                            d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z" />
+                                    </svg> </button>
+                                <div class="menu_root" tabindex="-1">
+                                    <a href="#">Pregledaj detalje</a>
+                                    <a href="#">Izmijeni knjigu</a>
+                                    <a href="#">Izdaj knjigu</a>
+                                    <a href="#">Rezervisi knjigu</a>
+                                    <a href="#">Vrati knjigu</a>
+                                    <a href="#">Otpisi knjigu</a>
+                                    <a href="#">Izbrisi knjigu</a>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
