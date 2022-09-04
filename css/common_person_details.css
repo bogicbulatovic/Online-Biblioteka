@@ -1,0 +1,32 @@
+#profil_image_container img {
+  height: 300px;
+  width: auto;
+  border: 3px solid lightgray;
+}
+
+#img_and_podaci_container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 220px;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+#podaci_container {
+  display: grid;
+  gap: 20px;
+}
+
+#podaci_container > div > :first-child {
+  color: grey;
+}
+
+#podaci_container > div > :nth-child(2) {
+  font-weight: 700;
+}
+
+#podaci_container > div {
+  display: grid;
+  gap: 3px;
+}
