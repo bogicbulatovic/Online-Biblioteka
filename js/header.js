@@ -39,8 +39,9 @@ divElement.innerHTML = `
                         </a>
                     </div>
                 </div>
-                
-                <img src="../images/julian_profil_picture.jpg" alt="profile picture">
+                <button id="profile_img_button">
+                <img src="../images/Blake_profile _picture.jpg" alt="profile picture">
+                </button>
                 </div>
                 </header>
                 
