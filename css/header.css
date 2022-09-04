@@ -1,3 +1,5 @@
+@import "../css/menu.css";
+
 body {
   /* prevent header covering main content */
   padding-top: 100px;
@@ -41,7 +43,7 @@ header {
   gap: 15px;
 }
 
-#header_actions_container svg {
+#header_actions_container > svg {
   height: 30px;
   fill: white;
 }
@@ -49,4 +51,42 @@ header {
 #header_actions_container img {
   height: 35px;
   border-radius: 50%;
+}
+
+#kreiraj_button {
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  align-items: center;
+  background-color: #0b0e75;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+}
+
+#kreiraj_button span {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  font-size: 16px;
+}
+
+#kreiraj_button svg {
+  font-size: 30px;
+  color: white;
+  height: 30px;
+}
+
+.menu_root a {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 5px;
+  align-items: center;
+  text-decoration: none;
+  justify-content: start;
+}
+
+.menu_root a svg {
+  font-size: 20px;
+  color: black;
 }
