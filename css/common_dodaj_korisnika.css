@@ -11,7 +11,7 @@ header {
   border-bottom: 2px solid lightgray;
 }
 
-#podaci_novog_bibliotekara input {
+#podaci_novog_korisnika input {
   min-height: 30px;
   border: 3px solid lightgray;
   margin-right: 10px;
@@ -19,8 +19,8 @@ header {
   font-size: 18px;
 }
 
-.podaci_novog_bibliotekara_field > :first-child {
-  color: grey;
+.podaci_novog_korisnika_field > :first-child {
+  color: rgb(82, 81, 81);
 }
 
 #img_and_podaci_container {
@@ -32,18 +32,18 @@ header {
   padding-left: 30px;
 }
 
-#podaci_novog_bibliotekara {
+#podaci_novog_korisnika {
   display: grid;
   gap: 20px;
 }
 
-.podaci_novog_bibliotekara_field {
+.podaci_novog_korisnika_field {
   display: grid;
   gap: 3px;
   align-content: flex-start;
 }
 
-#slika_novog_bibliotekara_container {
+#slika_novog_korisnika_container {
   border: 3px solid lightgray;
   width: 200px;
   height: 250px;
@@ -53,14 +53,15 @@ header {
   align-items: center;
 }
 
-#svg_novog_bibliotekara svg {
+#svg_novog_korisnika svg {
   height: 50px;
   width: auto;
-  color: grey;
+  color: rgb(82, 81, 81);
 }
 
 #add_img_text_container {
-  color: grey;
+  color: rgb(82, 81, 81);
+
   padding-top: 5px;
 }
 /*for chrome, opera, safari*/
@@ -96,4 +97,15 @@ input[type="number"] {
   font-size: 16px;
   padding: 10px 15px;
   border: 2px solid lightgray;
+}
+
+#ime_novog_korisnika > div {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 10px;
+}
+
+#text_container {
+  color: rgb(82, 81, 81);
 }
