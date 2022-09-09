@@ -1,0 +1,43 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid lightgray;
+}
+
+.naziv_knjige_container > :first-child {
+  color: rgb(82, 81, 81);
+}
+
+#podaci_pisca {
+  display: grid;
+  gap: 20px;
+  width: 40%;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.naziv_knjige_container {
+  display: grid;
+  gap: 3px;
+  align-content: flex-start;
+}
+
+.opis_knjige_container {
+  display: grid;
+  gap: 3px;
+}
+
+.opis_knjige_container > :first-child {
+  color: rgb(82, 81, 81);
+}
+
+#ime_knjige {
+  font-weight: 700;
+}
