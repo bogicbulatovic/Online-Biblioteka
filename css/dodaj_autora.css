@@ -1,0 +1,10 @@
+#podaci_novog_korisnika {
+  width: 50%;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+#podaci_novog_korisnika_and_button_container {
+  display: grid;
+  gap: 200px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/commonSideBar.js" defer></script>
+    <script src="../js/sidebar.js" defer></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/hambtn.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/common_dodaj_korisnika.css">
+    <link rel="stylesheet" href="../css/dodaj_autora.css">
+    <title>Dodaj autora</title>
+</head>
+
+<body>
+    <div id="sidebar_and_header_container">
+        <div id="sidebar"></div>
+    </div>
+    <header>
+        <div id="ime_novog_korisnika">
+            <h1>Novi autor</h1>
+            <div>
+                <a id="svi_korisnici" href="autori.html">Svi autori</a>
+                <span id="text_container">/ Novi autor</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="podaci_novog_korisnika">
+            <div class="podaci_novog_korisnika_field">
+                <label for="ime_prezime_input">Ime i prezime</label>
+                <input id="ime_prezime_input" type="text">
+            </div>
+            <div id="podaci_novog_korisnika_and_button_container">
+                <div class="podaci_novog_korisnika_field">
+                    <label for="ime_prezime_input">Opis</label>
+                    <textarea id="ime_prezime_input" rows="10" cols="40"></textarea>
+                </div>
+                <div id="action_buttons">
+                    <button id="otkazi_button">Otkazi</button>
+                    <button id="sacuvaj_button">Sacuvaj</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
