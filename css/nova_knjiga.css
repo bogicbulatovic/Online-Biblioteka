@@ -191,3 +191,55 @@ select::-ms-expand {
   font-size: 15px;
   color: rgb(86, 84, 84);
 }
+
+.drop_files_container {
+  padding: 30px;
+  margin: 20px;
+  border: 3px solid lightgrey;
+  border-style: dashed;
+  display: grid;
+  gap: 10px;
+}
+
+#drop_files_text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+#svg_and_drop_files {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+#svg_and_drop_files svg {
+  height: auto;
+  width: 25px;
+}
+
+.book_images_container {
+  display: grid;
+  justify-self: start;
+}
+
+#img_and_checkbox_container {
+  display: grid;
+  grid-auto-flow: column;
+  border: 3px solid lightgray;
+  padding-left: 10px;
+  padding-right: 5px;
+  gap: 5px;
+}
+
+#img_and_checkbox_container input {
+  margin-bottom: 180px;
+}
+
+#img_and_checkbox_container img {
+  width: 150px;
+  height: auto;
+}
