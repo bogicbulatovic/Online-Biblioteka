@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profil_ucenika.css">
+    <link rel="stylesheet" href="../css/common_person_details.css">
+    <script src="../js/commonSideBar.js" defer></script>
+    <script src="../js/sidebar.js" defer></script>
+    <script src="../js/tabs.js" defer></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/hambtn.css">
+    <link rel="stylesheet" href="../css/tabs.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/nova_knjiga.css">
+    <script src="../js/menu.js" defer></script>
+    <title>Evidencija knjiga</title>
+</head>
+
+<body>
+    <div id="sidebar_and_header_container">
+        <div id="sidebar"></div>
+    </div>
+    <header>
+        <div id="ime_nove_knjige">
+            <h1>Nova knjiga</h1>
+            <div>
+                <a id="sve_knjige" href="knjige.html">Evidencija knjiga</a>
+                <span id="text_container">/ Nova knjiga</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="tab_buttons_container">
+            <button id="osnovni_detalji_tab_btn" class="active_button tab_button">Osnovni detalji</button>
+            <button id="specifikacija_tab_btn" class="tab_button">Specifikacija</button>
+            <button id="multimedija_tab_btn" class="tab_button">Multimedija</button>
+        </div>
+        <hr>
+        <div data-ownerid="osnovni_detalji_tab_btn" class="tab_content">
+            <div class="tab_content_container osnovni_detalji_content_container">
+                <div class="details_and_chips_container">
+                    <div id="details_container">
+                        <div id="name_of_book_container">
+                            <label for="naziv_knjige">Naziv knjige</label>
+                            <input id="naziv_knjige" type="text">
+                        </div>
+                        <div id="description_container">
+                            <label for="ime_prezime_input">Opis</label>
+                            <textarea id="ime_prezime_input" rows="10" cols="40"></textarea>
+                        </div>
+                    </div>
+                    <div class="naslov_and_chip_container">
+                        <span class="chips_kategorije_naslov">Izaberite kategorije</span>
+                        <div class="chips_container">
+                            <div class="chip">
+                                <span>Udzbenici</span>
+                                <span class="closebutton">&times;</span>
+                            </div>
+                            <div class="chip">
+                                <span>Romani</span>
+                                <span class="closebutton">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="naslov_and_chip_container">
+                        <span class="chips_kategorije_naslov">Izaberite zanrove</span>
+                        <div class="chips_container">
+                            <div class="chip">
+                                <span>Poezija</span>
+                                <span class="closebutton">&times;</span>
+                            </div>
+                            <div class="chip">
+                                <span>Strucna literatura</span>
+                                <span class="closebutton">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chips_and_select_buttons_container">
+                    <div class="naslov_and_chip_container">
+                        <span class="chips_kategorije_naslov">Izaberite autore</span>
+                        <div class="chips_container">
+                            <div class="chip">
+                                <span>Mark Twain</span>
+                                <span class="closebutton">&times;</span>
+                            </div>
+                            <div class="chip">
+                                <span>Pero Peric</span>
+                                <span class="closebutton">&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select_buttons_container">
+                        <span>Izdavac</span>
+                        <div class="select">
+                            <select name="format" id="format">
+                                <option selected disabled></option>
+                                <option value="izdavac1">Izdavac 1</option>
+                                <option value="izdavac2">Izdavac 2</option>
+                                <option value="izdavac3">Izdavac 3</option>
+                                <option value="izdavac4">Izdavac 4</option>
+                                <option value="izdavac5">Izdavac 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select_buttons_container">
+                        <span>Godina izdavanja</span>
+                        <div class="select">
+                            <select name="format" id="format">
+                                <option selected disabled></option>
+                                <option value="2002">2002</option>
+                                <option value="2018">2018</option>
+                                <option value="2022">2022</option>
+                                <option value="2015">2015</option>
+                                <option value="1999">1999</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select_buttons_container">
+                        <span>Kolicina</span>
+                        <div class="select">
+                            <select name="format" id="format">
+                                <option selected disabled></option>
+                                <option value="30">30</option>
+                                <option value="12">12</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="18">18</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-ownerid="specifikacija_tab_btn" class="tab_content">
+            <div class="tab_content_container specifikacije_tab_container">
+                <div id="broj_strana_input_container">
+                    <label for="broj_strana">Broj strana</label>
+                    <input type="number" id="broj_strana">
+                </div>
+                <div class="select_buttons_container">
+                    <span>Pismo</span>
+                    <div class="select">
+                        <select name="format" id="format">
+                            <option selected disabled></option>
+                            <option value="cirilica">Cirilica</option>
+                            <option value="latinica">Latinica</option>
+                            <option value="arapsko">Arapsko</option>
+                            <option value="kinesko">Kinesko</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="select_buttons_container">
+                    <span>Povez</span>
+                    <div class="select">
+                        <select name="format" id="format">
+                            <option selected disabled></option>
+                            <option value="tvrdi">Tvrdi</option>
+                            <option value="meki">Meki</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="select_buttons_container">
+                    <span>Format</span>
+                    <div class="select">
+                        <select name="format" id="format">
+                            <option selected disabled></option>
+                            <option value="a1">A1</option>
+                            <option value="a2">A2</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="book_num_input_container">
+                    <label for="book_num">International Standard Book Num</label>
+                    <input type="text" id="book_num">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
