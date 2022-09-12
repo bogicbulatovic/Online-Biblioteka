@@ -230,16 +230,49 @@ select::-ms-expand {
   display: grid;
   grid-auto-flow: column;
   border: 3px solid lightgray;
-  padding-left: 10px;
+  padding-left: 25px;
   padding-right: 5px;
   gap: 5px;
 }
 
 #img_and_checkbox_container input {
   margin-bottom: 180px;
+  border: 3px solid black;
 }
 
 #img_and_checkbox_container img {
   width: 150px;
   height: auto;
+}
+
+.img_details_container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.img_details_container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img_details_container svg {
+  height: auto;
+  width: 15px;
+  fill: grey;
+}
+
+.time_and_size_container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_multimedija_container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-self: start;
+  gap: 40px;
 }
