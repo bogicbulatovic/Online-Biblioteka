@@ -1,0 +1,36 @@
+table {
+  width: 100%;
+}
+
+.add_btn_and_search_container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search_container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+.search_button {
+  border: none;
+  background-color: transparent;
+}
+
+.search_button svg {
+  font-size: 25px;
+}
+
+.search_input {
+  border: none;
+  font-size: 17px;
+}
+
+.search_input::placeholder {
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+}

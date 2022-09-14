@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/common_page.css" />
     <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/search_input.css">
     <script src="../js/header.js" defer></script>
     <script src="../js/commonSidebar.js" defer></script>
     <script src="../js/sidebar.js" defer></script>
     <script src="../js/menu.js" defer></script>
+    <script src="../js/search_table.js" defer></script>
     <title>Knjige</title>
 </head>
 
@@ -26,9 +28,22 @@
     </div>
     <main>
         <h1 class="dodaj_naslov">Knjige</h1>
-        <a class="common_button" href="../html/nova_knjiga.html">+ Nova knjiga</a>
+        <div class="add_btn_and_search_container">
+            <a class="common_button" href="../html/nova_knjiga.html">+ Nova knjiga</a>
+            <div class="search_container">
+                <button class="search_button">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                        </path>
+                    </svg>
+                </button>
+                <input id="search_table" class="search_input" type="search" placeholder="Search...">
+            </div>
+        </div>
         <div id="table-container">
-            <table>
+            <table data-searchid="search_table">
                 <tr>
                     <th></th>
                     <th>Naziv knjige</th>
@@ -43,7 +58,7 @@
                 </tr>
                 <tr>
                     <th><input type="checkbox" /></th>
-                    <td>Geografija Crne Gore</td>
+                    <td data-searchtrigger="Geografija Crne Gore">Geografija Crne Gore</td>
                     <td>Maksimovic Danka</td>
                     <td>Udzbenici</td>
                     <td>6</td>
@@ -74,7 +89,7 @@
                 </tr>
                 <tr>
                     <th><input type="checkbox" /></th>
-                    <td>Muzicka kultura</td>
+                    <td data-searchtrigger="Muzicka kultura">Muzicka kultura</td>
                     <td>Bubalo Zivkovic</td>
                     <td>Udzbenici</td>
                     <td>20</td>
@@ -105,7 +120,7 @@
                 </tr>
                 <tr>
                     <th><input type="checkbox" /></th>
-                    <td>Tom Sojer</td>
+                    <td data-searchtrigger="Tom Sojer">Tom Sojer</td>
                     <td>Mark Twain</td>
                     <td>Romani</td>
                     <td>3</td>
@@ -136,7 +151,7 @@
                 </tr>
                 <tr>
                     <th><input type="checkbox" /></th>
-                    <td>Robinson Kruso</td>
+                    <td data-searchtrigger="Robinson Kruso">Robinson Kruso</td>
                     <td>Daniel Defoe</td>
                     <td>Romani</td>
                     <td>0</td>

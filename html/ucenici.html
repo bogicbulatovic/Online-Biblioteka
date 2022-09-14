@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/common_page.css" />
     <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/search_input.css">
     <link rel="stylesheet" href="../css/ucenici.css">
     <script src="../js/header.js" defer></script>
     <script src="../js/commonSidebar.js" defer></script>
     <script src="../js/sidebar.js" defer></script>
     <script src="../js/menu.js" defer></script>
+    <script src="../js/search_table.js" defer></script>
     <title>Ucenici</title>
 </head>
 
@@ -27,9 +29,22 @@
     </div>
     <main>
         <h1 class="dodaj_naslov">Ucenici</h1>
-        <a class="common_button" href="../html/dodaj_ucenika.html">+ Novi ucenik</a>
+        <div class="add_btn_and_search_container">
+            <a class="common_button" href="../html/dodaj_ucenika.html">+ Novi ucenik</a>
+            <div class="search_container">
+                <button class="search_button">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                        </path>
+                    </svg>
+                </button>
+                <input id="search_table" class="search_input" type="search" placeholder="Search...">
+            </div>
+        </div>
         <div id="table-container">
-            <table>
+            <table data-searchid="search_table">
                 <tr>
                     <th></th>
                     <th>Ime i prezime</th>
@@ -40,7 +55,7 @@
                 </tr>
                 <tr>
                     <th><input type="checkbox" /></th>
-                    <td>Alfreds Futterkiste</td>
+                    <td data-searchtrigger="Alfreds Futterkiste">Alfreds Futterkiste</td>
                     <td>alfreds.futter@gmail.com</td>
                     <td>Ucenik</td>
                     <td>Prije 10 sati</td>
@@ -59,7 +74,7 @@
                 </tr>
                 <tr>
                     <th><input type="checkbox" /></th>
-                    <td>Centro Moctezuma</td>
+                    <td data-searchtrigger="Centro Moctezuma">Centro Moctezuma</td>
                     <td>moctezuma2708@yahoo.com</td>
                     <td>Ucenik</td>
                     <td>Prije 3 sata</td>
@@ -71,14 +86,14 @@
                                         d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z" />
                                 </svg> </button>
                             <div class="menu_root" tabindex="-1">
-                                <a href="#">Profil ucenika</a>
+                                <a href="profil_ucenika.html">Profil ucenika</a>
                             </div>
                         </div>
                     </th>
                 </tr>
                 <tr>
                     <th><input type="checkbox" /></th>
-                    <td>Francisco Chang</td>
+                    <td data-searchtrigger="Francisco Chang">Francisco Chang</td>
                     <td>fran.chang@gmail.com</td>
                     <td>Ucenik</td>
                     <td>Prije 13 sati</td>
@@ -90,7 +105,7 @@
                                         d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z" />
                                 </svg> </button>
                             <div class="menu_root" tabindex="-1">
-                                <a href="#">Profil ucenika</a>
+                                <a href="profil_ucenika.html">Profil ucenika</a>
                             </div>
                         </div>
                     </th>

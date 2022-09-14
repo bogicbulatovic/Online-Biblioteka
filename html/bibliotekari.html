@@ -12,10 +12,12 @@
   <link rel="stylesheet" href="../css/table.css">
   <link rel="stylesheet" href="../css/header.css" />
   <link rel="stylesheet" href="../css/menu.css">
+  <link rel="stylesheet" href="../css/search_input.css">
   <script src="../js/header.js" defer></script>
   <script src="../js/commonSidebar.js" defer></script>
   <script src="../js/sidebar.js" defer></script>
   <script src="../js/menu.js" defer></script>
+  <script src="../js/search_table.js" defer></script>
   <title>Bibliotekari</title>
 </head>
 
@@ -26,9 +28,22 @@
   </div>
   <main>
     <h1 class="dodaj_naslov">Bibliotekari</h1>
-    <a class="common_button" href="../html/dodaj_bibliotekara.html">+ Novi bibliotekar</a>
+    <div class="add_btn_and_search_container">
+      <a class="common_button" href="../html/dodaj_bibliotekara.html">+ Novi bibliotekar</a>
+      <div class="search_container">
+        <button class="search_button">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+            </path>
+          </svg>
+        </button>
+        <input id="search_table" class="search_input" type="search" placeholder="Search...">
+      </div>
+    </div>
     <div id="table-container">
-      <table>
+      <table data-searchid="search_table">
         <tr>
           <th></th>
           <th>Ime i prezime</th>
@@ -39,7 +54,7 @@
         </tr>
         <tr>
           <th><input type="checkbox" /></th>
-          <td>Valentina Kascelan</td>
+          <td data-searchtrigger="Valentina Kascelan">Valentina Kascelan</td>
           <td>valentina.kascelan@gmail.com</td>
           <td>Bibliotekar</td>
           <td>Prije 10 sati</td>
@@ -57,8 +72,8 @@
         </tr>
         <tr>
           <th><input type="checkbox" /></th>
-          <td>Valentina Kascelan</td>
-          <td>valentina.kascelan@gmail.com</td>
+          <td data-searchtrigger="Pero Perovic">Pero Perovic</td>
+          <td>pero.perovic@gmail.com</td>
           <td>Bibliotekar</td>
           <td>Prije 3 sata</td>
           <th>
@@ -75,8 +90,8 @@
         </tr>
         <tr>
           <th><input type="checkbox" /></th>
-          <td>Valentina Kascelan</td>
-          <td>valentina.kascelan@gmail.com</td>
+          <td data-searchtrigger="Marko Markovic">Marko Markovic</td>
+          <td>marko.markovic@gmail.com</td>
           <td>Bibliotekar</td>
           <td>Prije 13 sati</td>
           <th>

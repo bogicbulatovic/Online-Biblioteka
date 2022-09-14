@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="../css/sidebar.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/search_input.css">
     <script src="../js/header.js" defer></script>
     <script src="../js/commonSideBar.js" defer></script>
     <script src="../js/sidebar.js" defer></script>
     <script src="../js/tabs.js" defer></script>
     <script src="../js/menu.js" defer></script>
+    <script src="../js/search_table.js" defer></script>
     <title>Podesavanja</title>
 </head>
 
@@ -79,8 +81,21 @@
                 </dl>
             </div>
             <div data-ownerId="Kategorije" class="hidden tab_content kategorije_table">
-                <button class="common_button">+ Nova kategorija</button>
-                <table>
+                <div class="add_btn_and_search_container">
+                    <a class="common_button" href="#">+ Nova kategorija</a>
+                    <div class="search_container">
+                        <button class="search_button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input id="search_kategorije_table" class="search_input" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <table data-searchid="search_kategorije_table">
                     <tr>
                         <td></td>
                         <th>Naziv kategorije</td>
@@ -89,7 +104,7 @@
                     </tr>
                     <tr>
                         <td><input type="checkbox" /></td>
-                        <td>Hrana i pice</td>
+                        <td data-searchtrigger="Hrana i pice">Hrana i pice</td>
                         <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
                         </td>
                         <td>
@@ -108,7 +123,7 @@
                     </tr>
                     <tr>
                         <th><input type="checkbox" /></th>
-                        <td>Djecije knjige</td>
+                        <td data-searchtrigger="Djecije knjige">Djecije knjige</td>
                         <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
                         </td>
                         <td>
@@ -127,7 +142,7 @@
                     </tr>
                     <tr>
                         <th><input type="checkbox" /></th>
-                        <td>Istorija</td>
+                        <td data-searchtrigger="Istorija">Istorija</td>
                         <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
                         </td>
                         <td>
@@ -146,7 +161,7 @@
                     </tr>
                     <tr>
                         <th><input type="checkbox" /></th>
-                        <td>Skolske knjige</td>
+                        <td data-searchtrigger="Skolske knjige">Skolske knjige</td>
                         <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
                         </td>
                         <td>
@@ -165,7 +180,7 @@
                     </tr>
                     <tr>
                         <th><input type="checkbox" /></th>
-                        <td>Nauka, priroda i matematika</td>
+                        <td data-searchtrigger="Nauka, priroda i matematika">Nauka, priroda i matematika</td>
                         <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
                         </td>
                         <td>
@@ -184,7 +199,7 @@
                     </tr>
                     <tr>
                         <th><input type="checkbox" /></th>
-                        <td>Razno</td>
+                        <td data-searchtrigger="Razno">Razno</td>
                         <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quo quae, libero delectus!
                         </td>
                         <td>
@@ -204,8 +219,21 @@
                 </table>
             </div>
             <div data-ownerId="Zanrovi" class="hidden tab_content">
-                <button class="common_button">+ Novi zanr</button>
-                <table>
+                <div class="add_btn_and_search_container">
+                    <a class="common_button" href="#">+ Novi zanr</a>
+                    <div class="search_container">
+                        <button class="search_button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input id="search_zanrovi_table" class="search_input" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <table data-searchid="search_zanrovi_table">
                     <tr>
                         <td class="checkbox_table_cell"></td>
                         <th>Naziv zanra</th>
@@ -213,7 +241,7 @@
                     </tr>
                     <tr>
                         <td class="checkbox_table_cell"><input type="checkbox" /></td>
-                        <td>Poezija</td>
+                        <td data-searchtrigger="Poezija">Poezija</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +258,7 @@
                     </tr>
                     <tr>
                         <td class="checkbox_table_cell"><input type="checkbox" /></td>
-                        <td>Strucna literatura</td>
+                        <td data-searchtrigger="Strucna literatura">Strucna literatura</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +275,7 @@
                     </tr>
                     <tr>
                         <td class="checkbox_table_cell"><input type="checkbox" /></td>
-                        <td>Poezija</td>
+                        <td data-searchtrigger="Poezija">Poezija</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -264,7 +292,7 @@
                     </tr>
                     <tr>
                         <td class="checkbox_table_cell"><input type="checkbox" /></td>
-                        <td>Strucna literatura</td>
+                        <td data-searchtrigger="Strucna literatura">Strucna literatura</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +309,7 @@
                     </tr>
                     <tr>
                         <td class="checkbox_table_cell"><input type="checkbox" /></td>
-                        <td>Poezija</td>
+                        <td data-searchtrigger="Poezija">Poezija</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
