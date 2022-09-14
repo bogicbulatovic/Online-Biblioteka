@@ -1,6 +1,7 @@
 .osnovni_detalji_content_container {
   display: grid;
   grid-auto-flow: column;
+  gap: 100px;
 }
 
 .details_and_chips_container {
@@ -20,11 +21,19 @@
   gap: 5px;
 }
 
-#name_of_book_container input {
-  width: 18em;
-  height: 2em;
+#name_of_book_container input,
+#description_container textarea {
+  width: 100%;
   border-radius: 0.25em;
   border: 3px solid lightgray;
+}
+
+#name_of_book_container input {
+  height: 2em;
+}
+
+#description_container textarea {
+  resize: none;
 }
 
 #name_of_book_container label {
@@ -37,37 +46,33 @@
   gap: 5px;
 }
 
-#description_container textarea {
-  width: 18em;
-  height: 10em;
-  border-radius: 0.25em;
-  border: 3px solid lightgray;
-}
-
 #description_container label {
   font-size: 20px;
   color: rgb(86, 84, 84);
 }
 
+.naslov_and_chip_container {
+  display: grid;
+  gap: 5px;
+}
+
 .chips_container {
-  width: 70%;
-  height: auto;
-  padding: 5px 30px;
-  justify-content: start;
   display: grid;
   grid-auto-flow: column;
+  justify-content: start;
+  gap: 20px;
+  padding: 5px 30px;
   border: 3px solid lightgray;
   border-radius: 0.25em;
 }
 
 .chip {
-  line-height: 50px;
-  padding: 0px 25px;
-  justify-content: space-around;
-  height: 50px;
+  display: inline-grid;
+  grid-auto-flow: column;
+  gap: 5px;
+  align-items: center;
+  padding: 7px 15px;
   font-size: 16px;
-  display: inline-block;
-  margin-left: 20px;
   background-color: #f1f1f1f1;
   box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.8),
     7px 7px 17px rgba(70, 70, 70, 0.12);
@@ -78,11 +83,9 @@
   box-shadow: inset 7px 7px 17px rgba(70, 70, 70, 0.12);
 }
 
-.closebutton {
-  padding-left: 15px;
+.chip svg {
   font-size: 18px;
-  float: right;
-  cursor: pointer;
+  color: rgb(86, 84, 84);
 }
 
 .chips_kategorije_naslov {
@@ -224,7 +227,7 @@ select::-ms-expand {
 
 .book_images_container {
   display: grid;
-  justify-self: start;
+  gap: 5px;
 }
 
 #img_and_checkbox_container {
@@ -237,13 +240,13 @@ select::-ms-expand {
 }
 
 #img_and_checkbox_container input {
-  margin-bottom: 180px;
+  margin-bottom: auto;
   border: 3px solid black;
 }
 
 #img_and_checkbox_container img {
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 150px;
 }
 
 .img_details_container {
