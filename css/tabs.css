@@ -8,8 +8,8 @@
 }
 
 #tab_buttons_container .active_button {
-  background-color: #7d83f5;
-  border-bottom: 4px solid blue;
+  background-color: #3fa1e5;
+  border-bottom: 4px solid #28518a;
 }
 
 .hidden {

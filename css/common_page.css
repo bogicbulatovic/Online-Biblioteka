@@ -2,7 +2,7 @@ body {
   padding-left: 5%;
 }
 
-#add_user_link {
+.common_button {
   text-align: center;
   font-size: 25px;
   font-family: sans-serif;
