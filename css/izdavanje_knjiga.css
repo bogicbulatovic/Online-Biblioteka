@@ -34,3 +34,12 @@ h1 {
   font-size: 30px;
   color: rgb(54, 54, 54);
 }
+
+.table_and_search_container {
+  display: grid;
+  gap: 10px;
+}
+
+.search_container {
+  margin-left: auto;
+}
