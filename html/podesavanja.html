@@ -327,8 +327,21 @@
                 </table>
             </div>
             <div data-ownerId="Izdavac" class="hidden tab_content">
-                <button class="common_button">+ Novi izdavac</button>
-                <table>
+                <div class="add_btn_and_search_container">
+                    <a class="common_button" href="#">+ Nova izdavac</a>
+                    <div class="search_container">
+                        <button class="search_button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input id="search_izdavac_table" class="search_input" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <table data-searchid="search_izdavac_table">
                     <tr>
                         <td></td>
                         <th>Naziv izdavaca</th>
@@ -336,7 +349,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Izdavac 1</td>
+                        <td data-searchtrigger="Izdavac 1">Izdavac 1</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -353,7 +366,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Izdavac 2</td>
+                        <td data-searchtrigger="Izdavac 2">Izdavac 2</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -370,7 +383,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Izdavac 3</td>
+                        <td data-searchtrigger="Izdavac 3">Izdavac 3</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +400,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Izdavac 4</td>
+                        <td data-searchtrigger="Izdavac 4">Izdavac 4</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -404,7 +417,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Izdavac 5</td>
+                        <td data-searchtrigger="Izdavac 5">Izdavac 5</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -422,8 +435,21 @@
                 </table>
             </div>
             <div data-ownerId="Povez" class="hidden tab_content">
-                <button class="common_button">+ Novi povez</button>
-                <table>
+                <div class="add_btn_and_search_container">
+                    <a class="common_button" href="#">+ Novi povez</a>
+                    <div class="search_container">
+                        <button class="search_button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input id="search_povez_table" class="search_input" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <table data-searchid="search_povez_table">
                     <tr>
                         <td></td>
                         <th>Naziv poveza</th>
@@ -431,7 +457,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Tvrdi povez</td>
+                        <td data-searchtrigger="Tvrdi povez">Tvrdi povez</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -448,7 +474,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Meki povez</td>
+                        <td data-searchtrigger="Meki povez">Meki povez</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -465,7 +491,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Koricenje spiralom</td>
+                        <td data-searchtrigger="Koricenje spiralom">Koricenje spiralom</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -482,7 +508,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Klamovanje</td>
+                        <td data-searchtrigger="Klamovanje">Klamovanje</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -499,7 +525,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Kozni povez</td>
+                        <td data-searchtrigger="Kozni povez">Kozni povez</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -516,7 +542,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Umjetnicki povez</td>
+                        <td data-searchtrigger="Umjetnicki povez">Umjetnicki povez</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -534,8 +560,21 @@
                 </table>
             </div>
             <div data-ownerId="Format" class="hidden tab_content">
-                <button class="common_button">+ Novi format</button>
-                <table>
+                <div class="add_btn_and_search_container">
+                    <a class="common_button" href="#">+ Novi format</a>
+                    <div class="search_container">
+                        <button class="search_button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input id="search_format_table" class="search_input" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <table data-searchid="search_format_table">
                     <tr>
                         <td></td>
                         <th>Naziv formata</th>
@@ -543,7 +582,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>A1</td>
+                        <td data-searchtrigger="A1">A1</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -560,7 +599,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>A2</td>
+                        <td data-searchtrigger="A2">A2</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -577,7 +616,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>A3</td>
+                        <td data-searchtrigger="A3">A3</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -594,7 +633,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>A4</td>
+                        <td data-searchtrigger="A4">A4</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -611,7 +650,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>A5</td>
+                        <td data-searchtrigger="A5">A5</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -628,7 +667,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>A6</td>
+                        <td data-searchtrigger="A6">A6</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -646,8 +685,21 @@
                 </table>
             </div>
             <div data-ownerId="Pismo" class="hidden tab_content">
-                <button class="common_button">+ Novo pismo</button>
-                <table>
+                <div class="add_btn_and_search_container">
+                    <a class="common_button" href="#">+ Dodaj pismo</a>
+                    <div class="search_container">
+                        <button class="search_button">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z">
+                                </path>
+                            </svg>
+                        </button>
+                        <input id="search_pismo_table" class="search_input" type="search" placeholder="Search...">
+                    </div>
+                </div>
+                <table data-searchid="search_pismo_table">
                     <tr>
                         <td></td>
                         <th>Naziv pisma</th>
@@ -655,7 +707,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Cirilica</td>
+                        <td data-searchtrigger="Cirilica">Cirilica</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -672,7 +724,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Latinica</td>
+                        <td data-searchtrigger="Latinica">Latinica</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -689,7 +741,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Cirilica</td>
+                        <td data-searchtrigger="Cirilica">Cirilica</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -706,7 +758,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Latinica</td>
+                        <td data-searchtrigger="Latinica">Latinica</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -723,7 +775,7 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Cirilica</td>
+                        <td data-searchtrigger="Cirilica">Cirilica</td>
                         <td>
                             <div class="menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -740,9 +792,9 @@
                     </tr>
                     <tr>
                         <th class="checkbox_table_cell"><input type="checkbox" /></th>
-                        <td>Latinica</td>
+                        <td data-searchtrigger="Latinica">Latinica</td>
                         <td>
-                            <div class="menu_trigger_wrap">
+                            <div class=" menu_trigger_wrap">
                                 <button class="table_menu_btn"> <svg xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 128 512">
                                         <path
