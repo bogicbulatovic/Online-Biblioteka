@@ -280,3 +280,25 @@ select::-ms-expand {
   justify-self: start;
   gap: 40px;
 }
+
+@media (max-width: 600px) {
+  .osnovni_detalji_content_container {
+    grid-auto-flow: row;
+  }
+
+  .chips_and_select_buttons_container {
+    padding-left: 25px;
+  }
+
+  .chips_container {
+    overflow-x: auto;
+  }
+
+  .main_multimedija_container {
+    grid-auto-flow: row;
+  }
+
+  .drop_files_container {
+    justify-content: center;
+  }
+}

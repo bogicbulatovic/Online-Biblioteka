@@ -8,3 +8,9 @@
   display: grid;
   gap: 200px;
 }
+
+@media (max-width: 600px) {
+  #podaci_novog_korisnika_and_button_container {
+    gap: 30px;
+  }
+}

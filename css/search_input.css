@@ -9,6 +9,13 @@ table {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .add_btn_and_search_container {
+    grid-auto-flow: row;
+    gap: 10px;
+  }
+}
+
 .search_container {
   display: grid;
   grid-auto-flow: column;

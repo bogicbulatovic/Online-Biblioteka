@@ -1,5 +1,5 @@
 body {
-  padding-left: 5%;
+  padding-left: 60px;
 }
 
 .common_button {
@@ -15,6 +15,7 @@ body {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .dodaj_naslov {

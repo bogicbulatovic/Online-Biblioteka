@@ -1,4 +1,5 @@
 @import "../css/menu.css";
+@import "../css/hambtn.css";
 
 body {
   /* prevent header covering main content */
@@ -93,6 +94,52 @@ header {
 
 #profile_img_button {
   height: 35px;
+  width: auto;
   border-radius: 50%;
   border: none;
+}
+
+#mobile_header_menu_container {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #header_actions_container {
+    display: none;
+  }
+
+  #mobile_header_menu_container {
+    display: initial;
+  }
+
+  #header_naslov_text {
+    font-size: 20px;
+  }
+
+  #open_book {
+    height: 25px;
+  }
+
+  .menu_item {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+
+  .menu_root > button {
+    border: none;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+  }
+
+  button svg {
+    font-size: 20px;
+  }
+
+  .menu_item img {
+    height: 20px;
+    border-radius: 50%;
+  }
 }

@@ -32,6 +32,13 @@ header {
   padding-left: 30px;
 }
 
+@media (max-width: 600px) {
+  #img_and_podaci_container {
+    grid-auto-flow: row;
+    gap: 50px;
+  }
+}
+
 #podaci_novog_korisnika {
   display: grid;
   gap: 20px;

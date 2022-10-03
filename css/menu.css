@@ -17,7 +17,7 @@
   z-index: 1;
 }
 
-.menu_root a {
+.menu_root > * {
   padding: 5px;
   white-space: nowrap;
   color: black;

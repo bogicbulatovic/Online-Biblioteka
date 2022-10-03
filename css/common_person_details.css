@@ -13,6 +13,18 @@
   padding-left: 30px;
 }
 
+@media (max-width: 600px) {
+  #img_and_podaci_container {
+    grid-auto-flow: row;
+    gap: 50px;
+  }
+
+  header {
+    grid-auto-flow: row;
+    gap: 10px;
+  }
+}
+
 #podaci_container {
   display: grid;
   gap: 20px;

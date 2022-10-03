@@ -4,11 +4,7 @@ main {
 
 @media (max-width: 600px) {
   body {
-    padding-top: 125px;
-  }
-
-  h1 {
-    text-align: center;
+    padding-top: 90px;
   }
 }
 

@@ -7,6 +7,13 @@
   padding-right: 2px;
 }
 
+@media (max-width: 600px) {
+  #tab_buttons_container {
+    justify-content: start;
+    overflow-x: auto;
+  }
+}
+
 #content_container {
   margin-top: 50px;
 }
@@ -42,6 +49,12 @@ table {
   grid-auto-flow: column;
   align-items: center;
   gap: 15px;
+}
+
+@media (max-width: 600px) {
+  #polisa_data_list > div {
+    grid-auto-flow: row;
+  }
 }
 
 #polisa_data_list input {

@@ -25,6 +25,13 @@
   align-items: start;
 }
 
+@media (max-width: 600px) {
+  .page_nav_links_and_table_container {
+    grid-auto-flow: row;
+    gap: 50px;
+  }
+}
+
 #table-container {
   margin-top: 0px;
 }
@@ -38,6 +45,12 @@ h1 {
 .table_and_search_container {
   display: grid;
   gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .table_and_search_container {
+    padding-left: 25px;
+  }
 }
 
 .search_container {

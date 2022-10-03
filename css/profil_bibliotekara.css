@@ -9,7 +9,8 @@ header {
   padding-right: 7%;
   padding-top: 15px;
   padding-bottom: 15px;
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid lightgray;

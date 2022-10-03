@@ -45,6 +45,13 @@ header {
   padding-left: 15px;
 }
 
+@media (max-width: 600px) {
+  #tab_buttons_container {
+    justify-content: start;
+    overflow-x: auto;
+  }
+}
+
 .page_nav_link_item svg {
   width: 20px;
   height: auto;
