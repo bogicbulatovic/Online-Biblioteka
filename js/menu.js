@@ -2,7 +2,7 @@ const menuWraps = document.querySelectorAll(".menu_trigger_wrap");
 
 menuWraps.forEach((menuWrap) => {
   const menuRoot = menuWrap.querySelector(".menu_root");
-  const menuBtn = menuWrap.querySelector(".table_menu_btn");
+  const menuBtn = menuWrap.querySelector(".menu_anchor");
 
   let isMenuOpen = false;
 

@@ -1,42 +1,42 @@
 .menu_trigger_wrap {
-    position: relative;
+  position: relative;
 }
 
 .menu_root {
-    position: absolute;
-    background-color: white;
-    top: 100%;
-    right: 20%;
-    border-radius: 5px;
-    padding: 30px 15px;
-    display: grid;
-    gap: 10px;
-    justify-content: start;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
-    display: none;
-    z-index: 1;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  right: 20%;
+  border-radius: 5px;
+  padding: 30px 15px;
+  display: grid;
+  gap: 10px;
+  justify-content: start;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+  display: none;
+  z-index: 1;
 }
 
 .menu_root a {
-    padding: 5px;
-    white-space: nowrap;
-    color: black;
+  padding: 5px;
+  white-space: nowrap;
+  color: black;
 }
 
 .menuOpen {
-    display: grid;
+  display: grid;
 }
 
-.table_menu_btn {
-    background-color: transparent;
-    border: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 40px;
-    min-height: 40px;
+.menu_anchor {
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  min-height: 40px;
 }
 
-.table_menu_btn svg {
-    height: 20px;
+.menu_anchor svg {
+  height: 20px;
 }

@@ -9,6 +9,15 @@ divElement.innerHTML = `
                 </svg>
                 <h1 id="header_naslov_text">Online Biblioteka</h1>
             </div>
+            <div id="mobile_header_menu_container">
+                <button class="nav-toggle-button">
+                    <div class="hamburger-menu-icon">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                </button>
+            </div>
             <div id="header_actions_container">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -16,7 +25,7 @@ divElement.innerHTML = `
                 </svg>
 
                 <div class="menu_trigger_wrap">
-                    <button id="kreiraj_button" class="table_menu_btn">
+                    <button id="kreiraj_button" class="menu_anchor">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 10l5 5 5-5z"></path></svg>
                         <span>Kreiraj</span>
                     </button>
@@ -41,7 +50,7 @@ divElement.innerHTML = `
                 </div>
 
                 <div class="menu_trigger_wrap">
-                    <button id="profile_img_button" class="table_menu_btn">
+                    <button id="profile_img_button" class="menu_anchor">
                         <img src="../images/Blake_profile _picture.jpg" alt="profile picture">
                     </button>
                      <div class="menu_root" tabindex="-1">
